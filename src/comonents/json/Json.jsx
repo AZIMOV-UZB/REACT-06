@@ -67,16 +67,16 @@ const Json = () => {
       <div className="flex flex-col gap-2 ">
         <h3 className="text-center text-xl font-semibold">{product.brand}</h3>
         <p className="text-red-500 text-sm font-medium ml-2">21%</p>
-        <p className="desck">{product.description}</p>
-        <p className="text-lg font-semibold ml-2">${product.price}</p>
+        <p className="desck dark:text-white">{product.description}</p>
+        <p className="text-lg font-semibold ml-2 mb-3">${product.price}</p>
       </div>
-      <button className=" button w-12 border rounded-full bg-emerald-400 p-1 text-xs text-white">
+      <button className=" button w-12 border rounded-full bg-emerald-500 border-0 p-1 text-xs text-white">
         New
       </button>
       <button className="btr w-9 h-9 rounded-full border-none bg-yellow-400 ">
-        <LiaCartPlusSolid className="text-slate-100 text-2xl m-auto" />
+        <LiaCartPlusSolid className="text-slate-100 text-2xl m-auto " />
       </button>
-      <div className="mt-10 ofset flex ">
+      <div className=" ofset flex ">
         <button
           disabled={product.offset <= 0}
           onClick={() => handleAddToCart(product.id, false)}
@@ -99,7 +99,7 @@ const Json = () => {
     <li
       key={categorys}
       data-value={`/category/${categorys}`}
-      className="border py-1 px-2 rounded-full bg-[#ddd] mb-5 "
+      className="border py-1 px-2 rounded-full bg-[#ddd] mb-5  dark:text-white dark:bg-lime-700 "
       onClick={(e) => setSelectCategory(e.target.dataset.value)}
     >
       {categorys}
@@ -121,7 +121,7 @@ const Json = () => {
       >
         <li
           data-value={``}
-          className="collection border py-1 px-2 rounded-full bg-[#ddd] mb-5 dark:text-white dark:bg-lime-700"
+          className="collection border py-1 px-2 rounded-full bg-[#ddd] mb-5  dark:text-white dark:bg-lime-700"
           onClick={(e) => setSelectCategory (e.target.dataset.value)}
         >
           All
@@ -135,7 +135,7 @@ const Json = () => {
       {8 * semore <= total ? (
         <button
           onClick={() => setSeemore((p) => p + 1)}
-          className="w-60 border-none bg-lime-600 rounded-md py-2 mt-10 text-[#fff] text-[18px]  dark:text-white dark:bg-lime-700"
+          className="w-full border-none bg-lime-600 rounded-md py-2 mt-10 text-white text-[18px]  dark:text-white dark:bg-lime-700"
         >
           See more
         </button>
