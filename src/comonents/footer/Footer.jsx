@@ -10,7 +10,7 @@ const Footer = () => {
         </div>
         <div className='footer__wrapper container  py-14 flex flex-wrap	 justify-between'>
 
-<div className='footer__card mx-4  w-80 mt-6 leading-9	'>
+<div className='footer__card mx-4  w-96 mt-6 leading-9	'>
     <p className='footer__title text-2xl font-bold'>Информация</p>
     <p className='text-xl font-normal' >Все права защищены © 2015 интернет-магазин AIKEA.BY Беларусь.
     </p>

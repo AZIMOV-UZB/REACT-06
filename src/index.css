@@ -11,6 +11,9 @@
 max-width: 1300px;
 }
 
+.category:-webkit-scrollbar{
+  display: none;
+}
   .img{
     width: 100%;
   }

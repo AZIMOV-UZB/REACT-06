@@ -60,7 +60,7 @@ const Json = () => {
     >
       <img
         src={product.images[0]}
-        alt=""
+        alt="foto"
         className="duration-300 image w-full h-52 object-contain hover:scale-105 absolute top-0 left-0"
       />
       <div className="w-full h-52"></div>
@@ -70,13 +70,13 @@ const Json = () => {
         <p className="desck">{product.description}</p>
         <p className="text-lg font-semibold ml-2">${product.price}</p>
       </div>
-      <button className=" button w-12 border rounded-full bg-emerald-300 p-1 text-xs text-slate-100">
+      <button className=" button w-12 border rounded-full bg-emerald-400 p-1 text-xs text-white">
         New
       </button>
       <button className="btr w-9 h-9 rounded-full border-none bg-yellow-400 ">
         <LiaCartPlusSolid className="text-slate-100 text-2xl m-auto" />
       </button>
-      <div className="ofset flex ">
+      <div className="mt-10 ofset flex ">
         <button
           disabled={product.offset <= 0}
           onClick={() => handleAddToCart(product.id, false)}
@@ -117,11 +117,11 @@ const Json = () => {
       </div>
       <ul
         onChange={(e) => setSelectCategory(e.target.value)}
-        className=" cursor-pointer flex overflow-x-auto whitespace-nowrap gap-3 mb-10"
+        className="category cursor-pointer flex overflow-x-auto whitespace-nowrap gap-3 mb-10 "
       >
         <li
           data-value={``}
-          className="border py-1 px-2 rounded-full bg-[#ddd] mb-5 dark:text-white dark:bg-lime-700"
+          className="collection border py-1 px-2 rounded-full bg-[#ddd] mb-5 dark:text-white dark:bg-lime-700"
           onClick={(e) => setSelectCategory (e.target.dataset.value)}
         >
           All
@@ -135,7 +135,7 @@ const Json = () => {
       {8 * semore <= total ? (
         <button
           onClick={() => setSeemore((p) => p + 1)}
-          className="w-full border-none bg-lime-600 rounded-md py-2 mt-10 text-[#fff] text-[18px]  dark:text-white dark:bg-lime-700"
+          className="w-60 border-none bg-lime-600 rounded-md py-2 mt-10 text-[#fff] text-[18px]  dark:text-white dark:bg-lime-700"
         >
           See more
         </button>
