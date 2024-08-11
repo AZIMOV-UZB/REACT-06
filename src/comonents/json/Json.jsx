@@ -107,7 +107,7 @@ const Json = () => {
   ));
   return (
     <div className="container mx-auto mb-16 px-4">
-      <div className="flex flex-col sm:flex-row items-center sm:items-end gap-2 sm:gap-4 mb-5 sm:mb-10">
+      <div className="flex flex-col sm:flex-row items-center sm:items-end gap-2 sm:gap-4 mb-5 sm:mb-10 mt-8" >
         <p className="text-2xl sm:text-3xl font-bold">
           Скидки <b className="text-red-600">%</b>
         </p>
